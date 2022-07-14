@@ -121,7 +121,7 @@ body {
 
 .mainField,
 .shopField {
-  margin: 20px 10px;
+  margin: 20px;
   background-color: white;
   width: 800px;
   padding: 25px;
@@ -189,7 +189,7 @@ body {
 }
 
 .rightColumn {
-  padding: 10px;
+  padding: 10px 10px 0 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -208,10 +208,10 @@ body {
   color: white;
   background-color: var(--lightgreen);
   border-radius: 5px;
-  padding: 10px 30px;
+  padding: 5px 10px;
   font-size: 1.5rem;
-  align-self: center;
-  margin-top: 20px;
+  align-self: flex-start;
+  /* margin-top: 10px; */
 }
 
 .buyPoster:hover {
@@ -304,6 +304,7 @@ body {
   line-height: 1.5rem;
   font-size: 1.3rem;
   font-family: 'Delius Swash Caps', cursive;
+  text-align: center;
 }
 
 .posterInCart-price {
@@ -326,15 +327,21 @@ body {
   cursor: pointer;
 }
 
-.item--3btns {
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
 .item--2btns {
+  margin-top: auto;
   display: flex;
   gap: 20px;
   justify-content: space-between;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

@@ -34,23 +34,21 @@ function Item(props) {
               <span className="infoTitle">Poster price: </span>
               {'$' + currentPoster.price}
             </div>
-            <div className="item--3btns">
-              <div
-                onClick={() => {
-                  props.addToCart(currentPoster.id);
-                }}
-                className="buyPoster"
-              >
-                Add poster to cart
-              </div>
-              <div className="item--2btns">
-                <Link className="backBtn" to="/shop">
-                  {'<-- Go back'}
-                </Link>
-                <Link className="cartBtn" to="/cart">
-                  {'Go cart -->'}
-                </Link>
-              </div>
+            <div
+              onClick={() => {
+                props.addToCart(currentPoster.id);
+              }}
+              className="buyPoster"
+            >
+              Add poster to cart
+            </div>
+            <div className="item--2btns">
+              <Link className="backBtn" to="/shop">
+                {'↩ Go back'}
+              </Link>
+              <Link className="cartBtn" to="/cart">
+                {'Go cart ↣'}
+              </Link>
             </div>
           </div>
         </div>
