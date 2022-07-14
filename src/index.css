@@ -3,6 +3,7 @@
 :root {
   --lightyellow: #f5bf2b;
   --lightgray: #c5bfb5;
+  --lightgreen: rgb(58, 158, 76);
   --lightbkack: rgb(0, 0, 0, 0.7);
 }
 
@@ -36,6 +37,7 @@ body {
   display: flex;
   align-items: center;
   margin-right: 50px;
+  width: 60px
 }
 
 .cartIcon {
@@ -103,4 +105,109 @@ body {
 	100% {
 		transform: rotate(0deg);
 	}
+}
+
+.mainPage {
+  background-image: url(./images/main-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.mainField {
+  margin: 20px 10px;
+  background-color: white;
+  width: 1000px;
+  padding: 25px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainField > h2 {
+  margin-top: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.cards {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card--image {
+  width: 180px;
+  border-radius: 10px;
+}
+
+.priceAndBuy {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.buy {
+  padding: 2px 5px;
+  color: white;
+  background-color: var(--lightgreen);
+  border-radius: 5px;
+}
+
+.buy:hover {
+  cursor: pointer;
+}
+
+.twoColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  width: 100%;
+  gap: 25px;
+}
+
+.leftColumn {
+  display: flex;
+}
+
+.rightColumn {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.itemImage {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.infoTitle {
+  font-size: 1.3rem;
+}
+
+.buyPoster {
+  color: white;
+  background-color: var(--lightgreen);
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.buyPoster:hover {
+  cursor: pointer;
 }

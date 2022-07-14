@@ -1,7 +1,27 @@
 import React from 'react';
+import Card from '../components/Card';
 
-function Shop() {
-  return <div>Shop page</div>;
+function Shop(props) {
+  const cards = props.posters.map((poster) => {
+    return (
+      <Card
+        key={poster.id}
+        poster={poster}
+        addToCart={() => {
+          props.addToCart(poster.id);
+        }}
+      />
+    );
+  });
+
+  return (
+    <div className="mainPage">
+      <div className="mainField">
+        <h2>Posters</h2>
+        <div className="cards">{cards}</div>
+      </div>
+    </div>
+  );
 }
 
 export default Shop;
