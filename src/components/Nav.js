@@ -5,7 +5,7 @@ import cart from '../images/cart.png';
 function Nav(props) {
   let inCart = 0;
   props.posters.forEach((poster) => {
-    inCart += poster.inCart;
+    inCart += poster.quantity;
   });
 
   return (

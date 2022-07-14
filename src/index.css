@@ -119,10 +119,11 @@ body {
   align-items: flex-start;
 }
 
-.mainField {
+.mainField,
+.shopField {
   margin: 20px 10px;
   background-color: white;
-  width: 1000px;
+  width: 800px;
   padding: 25px;
   border-radius: 10px;
   display: flex;
@@ -130,7 +131,12 @@ body {
   align-items: center;
 }
 
-.mainField > h2 {
+.shopField {
+  width: 1000px;
+}
+
+.mainField > h2,
+.shopField > h2 {
   margin-top: 0;
 }
 
@@ -210,4 +216,119 @@ body {
 
 .buyPoster:hover {
   cursor: pointer;
+}
+
+.backBtn,
+.cartBtn {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(226, 92, 92);
+  align-self: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.cartBtn {
+  background-color: var(--lightyellow)
+}
+
+.posterInCart {
+  display: grid;
+  grid-template-columns: 100px repeat(4, 50px);
+  grid-template-rows: repeat(3, 50px);
+  grid-template-areas: 
+  "image name name name name"
+  "image decrease value increase remove"
+  "image price price price price";
+  column-gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--lightgray);
+}
+
+.posterInCart--link {
+  grid-area: image;
+}
+.posterInCart--image {
+  width: 100px;
+}
+
+.posterInCart--name {
+  grid-area: name;
+}
+
+.posterInCart-decrease {
+  grid-area: decrease;
+}
+
+.posterInCart-increase {
+  grid-area: increase;
+}
+
+.posterInCart-decrease,
+.posterInCart-increase,
+.posterInCart-remove {
+  background-color: var(--lightgray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  width: 30px;
+  height: 30px;
+  padding: 3px 5px 7px 5px;
+}
+
+.posterInCart-remove {
+  grid-area: remove;
+  background-color: var(--lightyellow);
+}
+
+.posterInCart-decrease:hover,
+.posterInCart-increase:hover,
+.posterInCart-remove:hover {
+  cursor: pointer;
+  background-color: #8c8c8c;
+}
+
+.posterInCart-value {
+  grid-area: value;
+  line-height: 1.5rem;
+  font-size: 1.3rem;
+  font-family: 'Delius Swash Caps', cursive;
+}
+
+.posterInCart-price {
+  grid-area: price;
+}
+
+.total {
+  font-size: 1.5rem;
+}
+
+.placeOrder {
+  background-color: var(--lightyellow);
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.placeOrder:hover {
+  cursor: pointer;
+}
+
+.item--3btns {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item--2btns {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
 }

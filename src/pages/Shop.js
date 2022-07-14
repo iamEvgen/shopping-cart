@@ -16,7 +16,7 @@ function Shop(props) {
 
   return (
     <div className="mainPage">
-      <div className="mainField">
+      <div className="shopField">
         <h2>Posters</h2>
         <div className="cards">{cards}</div>
       </div>
