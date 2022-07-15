@@ -45,6 +45,7 @@ function Cart(props) {
     } else {
       alert('Need to add posters to the cart.')
     }
+    props.emptyTheCart();
   }
   
   return (

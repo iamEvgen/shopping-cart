@@ -54,6 +54,15 @@ function App() {
     setPosters(newPosters);
   }
 
+  function emptyTheCart() {
+    const newPosters = posters.map((poster) => {
+      poster.quantity = 0;
+      poster.inCart = false;
+      return poster;
+    });
+    setPosters(newPosters);
+  }
+
   return (
     <BrowserRouter>
       <Nav posters={posters} />
@@ -75,6 +84,7 @@ function App() {
               addToCart={addToCart}
               decreaseInCart={decreaseInCart}
               removeFromCart={removeFromCart}
+              emptyTheCart={emptyTheCart}
               onValueChange={handleValueChange}
             />
           }
