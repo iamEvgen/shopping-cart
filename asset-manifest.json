@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.7270019a.css",
+    "main.js": "/shopping-cart/static/js/main.89e773b6.js",
+    "static/media/home-bg.jpeg": "/shopping-cart/static/media/home-bg.f987af55e4022fb5370e.jpeg",
+    "static/media/main-bg.jpg": "/shopping-cart/static/media/main-bg.254717a710cc48117b08.jpg",
+    "static/media/rdr.jpg": "/shopping-cart/static/media/rdr.02cefd4187d63f1f562d.jpg",
+    "static/media/lastOfUs.jpg": "/shopping-cart/static/media/lastOfUs.3b405007a1b0dfefb93b.jpg",
+    "static/media/fallout.jpg": "/shopping-cart/static/media/fallout.6de13d62dbd96598959b.jpg",
+    "static/media/godOfWar.jpg": "/shopping-cart/static/media/godOfWar.486ca955e9a3c12254e3.jpg",
+    "static/media/divinity.jpg": "/shopping-cart/static/media/divinity.9b1a32392602dddd1518.jpg",
+    "static/media/witcher.jpg": "/shopping-cart/static/media/witcher.bd0e9c70edc02512500c.jpg",
+    "static/media/diablo.jpg": "/shopping-cart/static/media/diablo.1f1957b4969862c54b90.jpg",
+    "static/media/gta.jpg": "/shopping-cart/static/media/gta.78cfc32f6157a4ce7a7b.jpg",
+    "static/media/cyberpunk.jpg": "/shopping-cart/static/media/cyberpunk.11ab10cd861e8c067f17.jpg",
+    "static/media/metro.jpg": "/shopping-cart/static/media/metro.555002930e5809b8c5fb.jpg",
+    "index.html": "/shopping-cart/index.html",
+    "main.7270019a.css.map": "/shopping-cart/static/css/main.7270019a.css.map",
+    "main.89e773b6.js.map": "/shopping-cart/static/js/main.89e773b6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7270019a.css",
+    "static/js/main.89e773b6.js"
+  ]
+}
