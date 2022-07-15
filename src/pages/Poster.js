@@ -23,7 +23,9 @@ function Poster(props) {
     }
   }
 
-  const stylePressBtn = pressBtn ? {backgroundColor: 'rgb(58, 158, 76)'} : {}
+  const stylePressBtn = pressBtn
+    ? { backgroundColor: '#f5bf2b' }
+    : {};
 
   return (
     <div className="mainPage">

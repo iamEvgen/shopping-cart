@@ -64,7 +64,7 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Nav posters={posters} />
       <Routes>
         <Route path="/" element={<Home />} />

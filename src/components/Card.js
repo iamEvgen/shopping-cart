@@ -16,7 +16,7 @@ function Card(props) {
   }
 
   const addToCardBtnStyle = addToCardBtnPressed
-    ? { backgroundColor: 'rgb(58, 158, 76)' }
+    ? { backgroundColor: '#f5bf2b' }
     : {};
 
   return (

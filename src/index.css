@@ -78,7 +78,7 @@ body {
   border-radius: 5px;
   background-color: var(--lightbkack);
   font-size: 1.3rem;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
   animation: wiggle 4s alternate infinite;
 }
 
@@ -199,7 +199,7 @@ body {
 
 .buy:hover {
   cursor: pointer;
-  background-color: #f5bf2b;
+  opacity: 0.8;
   animation: wiggleSlow 1s alternate infinite;
 }
 
@@ -249,7 +249,7 @@ body {
 
 .buyPoster:hover {
   cursor: pointer;
-  background-color: var(--lightyellow);
+  opacity: 0.8;
 }
 
 .backBtn,
