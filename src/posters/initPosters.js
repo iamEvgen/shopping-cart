@@ -6,8 +6,8 @@ const initPosters = [
       'Cyberpunk 2077 is an open-world, action-adventure RPG set in the megalopolis of Night City, where you play as a cyberpunk mercenary wrapped up in a do-or-die fight for survival. Improved and featuring all-new free additional content, customize your character and playstyle as you take on jobs, build a reputation, and unlock upgrades. The relationships you forge and the choices you make will shape the story and the world around you. Legends are made here. What will yours be?',
     url: 'posters/cyberpunk.jpg',
     price: '19,99',
-    inCart: true,
-    quantity: 3,
+    inCart: false,
+    quantity: 0,
   },
   {
     id: 1,
@@ -16,8 +16,8 @@ const initPosters = [
       "The game takes place in a fictional fantasy world based on Slavic mythology. Players control Geralt of Rivia, a monster slayer for hire known as a Witcher, and search for his adopted daughter, who is on the run from the otherworldly Wild Hunt. Players battle the game's many dangers with weapons and magic, interact with non-player characters, and complete quests to acquire experience points and gold, which are used to increase Geralt's abilities and purchase equipment. The game's story has three possible endings, determined by the player's choices at key points in the narrative.",
     url: 'posters/witcher.jpg',
     price: '24,99',
-    inCart: true,
-    quantity: 2,
+    inCart: false,
+    quantity: 0,
   },
   {
     id: 2,
@@ -26,8 +26,8 @@ const initPosters = [
       "Red Dead Redemption 2[a] is a 2018 action-adventure game developed and published by Rockstar Games. The game is the third entry in the Red Dead series and a prequel to the 2010 game Red Dead Redemption. The story is set in 1899 and follows the exploits of outlaw Arthur Morgan, a member of the Van der Linde gang, in a fictionalized representation of the Western, Midwestern, and Southern United States. Arthur must deal with the decline of the Wild West whilst attempting to survive against government forces, rival gangs, and other adversaries. The game's epilogue follows fellow gang member John Marston, the protagonist of Red Dead Redemption.",
     url: 'posters/rdr.jpg',
     price: '19,99',
-    inCart: true,
-    quantity: 1,
+    inCart: false,
+    quantity: 0,
   },
   {
     id: 3,

@@ -2,8 +2,9 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
-function Item(props) {
+function Poster(props) {
   const params = useParams();
+  const [pressBtn, setPressBtn] = React.useState(false);
 
   let currentPoster;
   props.posters.forEach((poster) => {
@@ -13,6 +14,16 @@ function Item(props) {
   });
 
   const image = require(`../${currentPoster.url}`);
+
+  function handlePressBtn(event) {
+    if (event.type === 'mousedown') {
+      setPressBtn(true);
+    } else {
+      setPressBtn(false);
+    }
+  }
+
+  const stylePressBtn = pressBtn ? {backgroundColor: 'rgb(58, 158, 76)'} : {}
 
   return (
     <div className="mainPage">
@@ -35,9 +46,13 @@ function Item(props) {
               {'$' + currentPoster.price}
             </div>
             <div
+              style={stylePressBtn}
               onClick={() => {
                 props.addToCart(currentPoster.id);
               }}
+              onMouseDown={handlePressBtn}
+              onMouseUp={handlePressBtn}
+              onMouseLeave={handlePressBtn}
               className="buyPoster"
             >
               Add poster to cart
@@ -57,4 +72,4 @@ function Item(props) {
   );
 }
 
-export default Item;
+export default Poster;

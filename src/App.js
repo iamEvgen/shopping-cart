@@ -2,10 +2,10 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Shop from './pages/Shop';
-import Item from './pages/Item';
+import Poster from './pages/Poster';
 import Cart from './pages/Cart';
 import Nav from './components/Nav';
-import initPosters from './components/initPosters';
+import initPosters from './posters/initPosters';
 
 function App() {
   const [posters, setPosters] = React.useState(initPosters);
@@ -65,7 +65,7 @@ function App() {
         />
         <Route
           path="/shop/:id"
-          element={<Item posters={posters} addToCart={addToCart} />}
+          element={<Poster posters={posters} addToCart={addToCart} />}
         />
         <Route
           path="/cart"
